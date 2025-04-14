@@ -1,1 +1,1 @@
-<pre><code>wget --no-check-certificate https://raw.githubusercontent.com/PetrukTunnel/v7/main/install.sh && chmod +x install.sh && ./install.sh</code></pre>
+<pre><code>wget --no-check-certificate sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/PetrukTunnel/v7/main/install.sh && chmod +x install.sh && sed -i -e 's/\r$//' install.sh && screen -S install ./install.sh</code></pre>
