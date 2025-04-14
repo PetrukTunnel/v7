@@ -2,7 +2,7 @@
 clear
 
 # repo
-REPO="https://raw.githubusercontent.com/murahtunnel/ubdeb10_20_/main/"
+REPO="https://raw.githubusercontent.com/PetrukTunnel/v7/main/"
 
 # download service limit quota
 wget -q -O /etc/systemd/system/bwvme.service "${REPO}Xbw_LIMIT/bwvme.service" && chmod +x bwvme.service >/dev/null 2>&1
